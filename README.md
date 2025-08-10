@@ -1,12 +1,41 @@
-# React + Vite
+# 🌤 Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This is a **React.js** based weather application that fetches **real-time weather data** using the [OpenWeatherMap API](https://openweathermap.org/).  
+It allows users to search for any city and view the **temperature, humidity, weather conditions, and date/time**.  
+The app features a clean and responsive UI for both desktop and mobile
 
-Currently, two official plugins are available:
+## Getting Started
+### 1. Clone the Repository
+git clone https://github.com/nishantkumar-62/weather-forecast.git
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 2. Install Dependencies
+Navigate to the project folder and install required dependencies:
+```bash
+npm install
 
-## Expanding the ESLint configuration
+```
+### 3. ENV Variables
+Create a `.env` file in the root folder and add these variables:
+```
+REACT_APP_WEATHER_API_KEY=your_openweathermap_api_key
+REACT_APP_BASE_URL=https://api.openweathermap.org/data/2.5
+```
+📌 Note: Replace your_openweathermap_api_key with your actual API key from OpenWeatherMap.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+4. Run Project
+To start the project locally:
+```
+npm start
+```
+The app will run on:
+👉 http://localhost:3000
+
+## Features  
+- 🌍 Search weather by city name  
+- 🌡 Real-time temperature, humidity, and conditions  
+- 🖥 Responsive design for mobile & desktop  
+- 🔄 API-based live updates
+
+## Live Demo
+🔗 View Live App https://nishantkumar-62.github.io/weather-forecast/
